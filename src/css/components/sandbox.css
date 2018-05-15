@@ -1,0 +1,58 @@
+.sandbox {
+  background-color: #fff;
+  font-size: 1.75em;
+  height: 100%;
+  width: 100%;
+}
+
+.sandbox .row {
+  overflow: hidden;
+  height: 50%;
+  width: 100%;
+}
+
+.sandbox-short-results .row:first-child {
+  height: 70%;
+}
+
+.sandbox-short-results .row + .row {
+  height: 30%;
+}
+
+.sandbox .row .cell {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.sandbox .row .cell .CodeMirror {
+  height: 100%;
+}
+
+.sandbox .row .cell:first-child:last-child {
+  width: 100%;
+}
+
+.sandbox .row .cell .toolbar .action button {
+  cursor: pointer;
+  font-size: 1em;
+  padding: .05em .5em;
+}
+
+.sandbox .row .cell.result {
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.sandbox .row .cell .toolbar {
+  bottom: 1px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 1px;
+}
+
+.sandbox .row .cell .output {
+  height: 100%;
+}
